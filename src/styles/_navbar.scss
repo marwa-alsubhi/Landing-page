@@ -1,0 +1,85 @@
+
+ //import colors
+@import 'colors';
+@import 'button';
+@import 'media-querie';
+
+nav{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px)/2);
+  z-index: 10;
+  position: relative; 
+  ul {
+    float: right;
+    margin: 2rem;
+
+
+    li{
+      display: inline;
+      margin: 0.9rem;
+
+    @include table{
+      display: none;
+      margin: 2rem;
+     
+    }
+    }
+}
+}
+ 
+ a {
+    color: $black;
+    border: 1px solid  $black;
+    border-radius: 20px;
+    padding: 0.7em;
+  }
+  nav ul li a:hover,
+  nav ul li a:active {
+    background-color: $primary;
+    transition: ease-in 0.2s ease;
+  }
+  .icon {
+    color: $black;
+  }
+  
+  .icon:hover {
+    color: $primary;
+  }
+  .menu{
+    opacity: 0;
+    @include table{
+      opacity: 1;
+      right: 20px;
+      top:20px;
+      position: absolute;
+    }
+   
+  }
+
+.dropbox-menu{
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  background-color: $second;
+
+  @include table{
+    opacity: 1;
+  }
+ 
+  li{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  a:hover{
+    background-color: $primary;
+  }
+
+
+}

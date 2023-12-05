@@ -1,0 +1,15 @@
+
+@import 'colors';
+
+.btn {
+    width: 150px;
+    padding: 1em;
+    color: $black;
+    background-color: $primary; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .btn:hover{
+    color: $second; 
+  }
